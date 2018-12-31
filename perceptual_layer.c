@@ -2,6 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 
+
 float random_weight(void)
 {
 	float first_half;
@@ -55,6 +56,7 @@ middle *middle_neuron(char data, float leight, percept *one_percept)
 	new->leight = leight;
 	new->next = NULL;
 	new->one_percept = one_percept;
+
 	return (new);
 }
 
@@ -89,4 +91,7 @@ int main()
 {
 	printf("%f", random_weight());
 	return (0);
+}
+	*(new->data) = data;
+	return (new);
 }
